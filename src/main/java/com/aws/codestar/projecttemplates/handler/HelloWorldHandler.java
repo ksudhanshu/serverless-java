@@ -17,6 +17,6 @@ public class HelloWorldHandler implements RequestHandler<Object, Object> {
     public Object handleRequest(final Object input, final Context context) {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
-        return new GatewayResponse(new JSONObject().put("Output", "Hello World from Kaiser Demo test!").toString(), headers, 200);
+        return new GatewayResponse(new JSONObject().put("Output", "Welcome to serverless architecture sessions!").toString(), headers, 200);
     }
 }
